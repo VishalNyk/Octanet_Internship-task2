@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>TODO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="images/head2.jpg" height="100px" width="1950px">
+                <div class="quote">
+                    <h1 class="margarine-regular italicss">Note it, Do it.</h1>
+                    <br>
+                    <h4 class="margarine-regular col">Easily add, edit and submit your daily life activities</h4>
+                </div>
+            </div>
+        </header>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                        <strong>Add your activities</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+ 
+    <div class="container mt-3">
+        <h2></h2>
+ 
+        <label id="lblsuccess" class="text-success"
+                style="display: none;">
+        </label>
+         
+        <form id="addForm">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+ 
+                    <input type="text" onkeyup=
+                        "toggleButton(this, 'submit')"
+                        class="form-control" id="item">
+                </div>
+ 
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                <input type="submit" class="btn btn-dark"
+                        id="submit" value="Submit" disabled>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="addTasks">
+        <h3 class="mt-4">Tasks</h3>
+ 
+        <form id="addForm">
+            <ul class="list-group" id="items"></ul>
+        </form>
+    </div>
+        <footer>
+            <div class="ocean">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="quote">
+                    <h2 class="margarine-regular">"The moment you note down your activity, you've already achieved half of the job!"</h2>
+                </div>
+            </div>
+        </footer>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </body>
+</html>
